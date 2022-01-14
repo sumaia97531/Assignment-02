@@ -41,6 +41,7 @@ margin-right: 34px;
     display: flex;
     margin-left: 80px;
     margin-right: 40px;
+    margin-bottom: 100px;
 }
 .container-details{
     margin-top: 140px;
@@ -67,13 +68,79 @@ margin-right: 34px;
     color: #ffff;
 }
 .container-image{
-    width: 50%;
-    height: 400px;
+    width: 30%;
+    height: 300px;
     margin-top: 80px;
     margin-left: 50px;
+    transition: transform 3s ease;
+}
+.container-image:hover{
+    transform:scale(.5, .5)
 }
 
-
+/* Popular collections styles */
+.all-collection{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.popular-collection h2{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 70px;
+    color: #3A3A3A;
+    text-align: center;
+}
+.collection{
+    width: 329px;
+    height: 476px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px #888888;
+}
+.product-image{
+    width: 300px;
+    height: 256px;
+    border-radius: 5px;
+}
+.product-name{
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
+    margin-bottom: 6px;
+}
+.product-price{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.fa-star{
+    width: 16px;
+    height: 16px;
+}
+.fa-star.filled, .fa-star-half-alt{
+    color: #FFC014;
+}
+.ratings span{
+    font-size: 14px;
+    color: #5E6366;
+    margin-left: 8px;
+}
+.product-info{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 143%;
+    color: #787885;
+}
+.See-more{
+    position: absolute;
+    top: 2260px;
+    left: 950px;
+    color: rgba(224, 44, 109, 0.87);
+    font-weight: bold;
+    font-size: 16px;
+}
 
 
 
