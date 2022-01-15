@@ -12,6 +12,24 @@ body{
 .half-width{
     width: 50%;
 }
+.section-title{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 70px;
+    color: #3A3A3A;
+    text-align: center;
+    margin-top: 90px;
+}
+button{
+    width: 196px;
+    height: 44px;
+    background: #E02C6D;
+    border: 0;
+    border-radius: 41px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffff;
+}
 /* --------------------
 -Header Section Styles-
 --------------------- */
@@ -57,16 +75,6 @@ margin-right: 34px;
     color: #3A3A3A;
 }
 
-.container-details button{
-    width: 196px;
-    height: 44px;
-    background: #E02C6D;
-    border: 0;
-    border-radius: 41px;
-    font-weight: bold;
-    font-size: 16px;
-    color: #ffff;
-}
 .container-image{
     width: 30%;
     height: 300px;
@@ -86,13 +94,7 @@ margin-right: 34px;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
 }
-.popular-collection h2{
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 70px;
-    color: #3A3A3A;
-    text-align: center;
-}
+
 .collection{
     width: 329px;
     height: 476px;
@@ -140,6 +142,37 @@ margin-right: 34px;
     color: rgba(224, 44, 109, 0.87);
     font-weight: bold;
     font-size: 16px;
+}
+/* Contact Us section style */
+
+.Reviews{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr) ;
+    margin: 60px;
+    text-align: center;
+}
+.review{
+    height: 255px;
+    width: 450px;
+    
+}
+.customer-photo{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: -30px;
+  }
+.Customer-name{
+    display: inline-block;
+    color: #3A3A3A;
+    font-weight: 600;
+}
+.customer-review{
+    color: #3A3A3A;
+    margin: 15px 50px 50px 75px;
+}
+#button{
+    margin-left: 75%;
 }
 
 
