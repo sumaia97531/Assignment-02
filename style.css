@@ -12,14 +12,7 @@ body{
 .half-width{
     width: 50%;
 }
-.section-title{
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 70px;
-    color: #3A3A3A;
-    text-align: center;
-    margin-top: 90px;
-}
+
 button{
     width: 196px;
     height: 44px;
@@ -33,6 +26,9 @@ button{
 /* --------------------
 -Header Section Styles-
 --------------------- */
+/* header{
+    width: 1000px;
+} */
 nav{
     display: flex;
     justify-content: space-between;
@@ -136,9 +132,11 @@ margin-right: 34px;
     color: #787885;
 }
 .See-more{
-    position: absolute;
+    /* position: absolute;
     top: 2260px;
-    left: 950px;
+    left: 950px; */
+    padding-top: 500px;
+    padding-left: 950px;
     color: rgba(224, 44, 109, 0.87);
     font-weight: bold;
     font-size: 16px;
@@ -196,4 +194,200 @@ footer .icon{
     display: inline-block;
 }
 
+/* ---Creating Responsive ----*/
+/* For Mobile Device */
+@media screen and (max-width:480px){
+    header{
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+    nav{
+        display: block;
+    }
+    .nav-options{
+        display: none;
+    }
+    .Start-Your-Journey{
+        width: 100%;
+    }
+    .container{
+        display: block;
+        text-align: center;
+    }
+    .section-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 70px;
+        color: #3A3A3A;
+        text-align: center;
+        margin-top: 70px;
+    }
+    button{
+        width: 190px;
+        height: 41px;
+        background: #E02C6D;
+        border: 0;
+        border-radius: 41px;
+        font-weight: bold;
+        font-size: 14px;
+        color: #ffff;
+        margin-left: 40%;
+    }
+    .Reviews #button{
+        display: block;
+        margin-top: 0;
+        margin-left: 40px;
+    }
+    .container-details h1{
+        width: 300px;
+        font-weight: bold;
+        font-size: 28px;
+        color: #3A3A3A;
+        text-align: center;
+    }
+    .container-details p{
+        width: 300px;
+        font-weight: 500;
+        font-size: 14px;
+        color: #3A3A3A;
+        text-align: center;
+    }
+    
+    .container-image img{
+        width: 257px;;
+        height: 257px;
+        margin-top: 20px;
+        margin-left: -60px;
+        transition: transform 3s ease;
+    }
+    .container button{
+        width: 194px;
+        height: 44px;
+    }
+    .all-collection{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 15px;
+        grid-column-gap: 0;
+    }
+    .See-more{
+        padding-left: 250px;
+    }
+    .Reviews{
+        display: block;
+    }
+    .review{
+        height: 355px;
+        width: 270px;
+        
+    }
+    .footer{
+        width: 100%;
+    }
 
+}
+
+/* For Tablet Device */
+@media only screen and (min-width:481px) and (max-width:768px) {
+    header{
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+    nav{
+        display: block;
+    }
+    .nav-options{
+        display: none;
+    }
+    .Start-Your-Journey{
+        width: 100%;
+    }
+    .container{
+        display: block;
+        text-align: center;
+        margin-left: 30%;
+    }
+    .section-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 70px;
+        color: #3A3A3A;
+        text-align: center;
+        margin-top: 70px;
+    }
+    button{
+        width: 190px;
+        height: 41px;
+        background: #E02C6D;
+        border: 0;
+        border-radius: 41px;
+        font-weight: bold;
+        font-size: 14px;
+        color: #ffff;
+        margin-left: 40%;
+    }
+    #button{
+        display: block;
+        margin-top: 0;
+        margin-left: 100px;
+    }
+    .container-details h1{
+        width: 300px;
+        font-weight: bold;
+        font-size: 28px;
+        color: #3A3A3A;
+        text-align: center;
+    }
+    .container-details p{
+        width: 300px;
+        font-weight: 500;
+        font-size: 14px;
+        color: #3A3A3A;
+        text-align: center;
+    }
+    
+    .container-image img{
+        width: 257px;;
+        height: 257px;
+        margin-top: 20px;
+        margin-left: -60px;
+        transition: transform 3s ease;
+    }
+    .container button{
+        width: 194px;
+        height: 44px;
+    }
+    .all-collection{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 15px;
+    }
+    .collection{
+        width: 270px;
+        height: 476px;
+    }
+    .product-image img{
+        width: 250px;
+        height: 256px;
+        border-radius: 5px;
+    }
+    .See-more{
+        padding-left: 0px;
+    }
+    /* .Reviews{
+        display: block;
+    } */
+    .review{
+        height: 355px;
+        width: 240px;
+        margin-left: 0px;
+        
+    }
+    .customer-review{
+        font-size: 14px;
+    }
+    .footer{
+        width: 100%;
+    }
+
+}
