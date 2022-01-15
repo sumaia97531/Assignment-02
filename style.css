@@ -12,6 +12,15 @@ body{
 .half-width{
     width: 50%;
 }
+.section-title{
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 70px;
+    color: #3A3A3A;
+    text-align: center;
+    margin-top: 70px;
+    text-align: center;
+}
 
 button{
     width: 196px;
